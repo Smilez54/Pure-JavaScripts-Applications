@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript on steroids</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Age Calculator Begins -->
+    <div class="container-1">
+
+        <div class="heading-1">
+            <h2>Get your age in days</h2>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    <!-- Age Calculator Ends -->
+
+    <!-- Image Generator Begins -->
+
+    <div class="container-2">
+        <div class="heading-2">
+            <h2>Image Generator</h2>
+            <button class="btn btn-success" id="image-gen" onclick="generateImage()">Generate image(s)</button>
+        </div>
+        
+        <div class="flex-box-container-2" id="flex-image-gen"></div>
+    </div>
+
+    <!-- Image Generator Ends -->
+
+
+    <!-- Rock Paper Scissors Begins -->
+
+    <div class="container-3">
+        <h2>Rock Paper Scissors</h2>
+
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="./images/photo_2022-07-21_11-46-14.jpg" alt="rock" onclick="rpsGame(this)" id="rock">
+            <img src="./images/erik-torres-omk4kCfUMfo-unsplash.jpg" alt="paper" onclick="rpsGame(this)" id="paper">
+            <img src="./images/anna-kumpan-kbcaL2wLgYo-unsplash.jpg" alt="scissors" onclick="rpsGame(this)" id="scissors">
+        </div>
+    </div>
+    <!-- Rock Paper Scissors Ends -->
+
+    <!-- Change Buttons Colors begins -->
+
+    <div class="container-4">
+        <h2 id="change-my-color">Change All Buttons color</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
